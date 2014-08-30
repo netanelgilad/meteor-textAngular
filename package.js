@@ -1,26 +1,21 @@
 Package.describe({
-  summary: "A radically powerful Text-Editor/Wysiwyg editor for Angular.js! Create multiple editor instances, two-way-bind HTML content, watch editors for changes and more!"
+  summary: "A radically powerful Text-Editor/Wysiwyg editor for Angular.js! Create multiple editor instances, two-way-bind HTML content, watch editors for changes and more!",
+  version: "0.0.2",
+  git: "https://github.com/netanelgilad/meteor-textAngular.git"
 });
 
-function packageExists(pkgname) {
-  var fs = Npm.require('fs');
-  var path = Npm.require('path');
-  var pkgpath = path.join('packages', pkgname);
-  return fs.existsSync(pkgpath);
-}
+Package.onUse(function(api) {
+  api.versionsFrom('METEOR@0.9.0.1');
+  api.use('urigo:ngmeteor@0.2.0', 'client');
 
-Package.on_use(function (api) {
-  api.use('bower', 'client');
-
-  if (packageExists('angularite')) {
-    api.use('angularite', 'client');
-  } else if (packageExists('ngMeteor')) {
-    api.use('ngMeteor', 'client');
-  }
-
-  // Install bower components.
-  api.add_files('smart.json', 'client');
+  api.addFiles('textAngular.min.js', 'client');
 
   // Client files.
-  api.add_files('init.js', 'client');
+  api.addFiles('init.js', 'client');
+});
+
+Package.onTest(function(api) {
+  api.use('tinytest');
+  api.use('netanelgilad:textAngular');
+  api.addFiles('netanelgilad:textAngular-tests.js');
 });
