@@ -16,6 +16,6 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('netanelgilad:textAngular');
-  api.addFiles('netanelgilad:textAngular-tests.js');
+  api.use('netanelgilad:text-angular');
+  api.addFiles('netanelgilad:text-angular-tests.js');
 });
