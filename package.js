@@ -1,6 +1,6 @@
 Package.describe({
-  summary: "A radically powerful Text-Editor/Wysiwyg editor for Angular.js! Create multiple editor instances, two-way-bind HTML content, watch editors for changes and more!",
-  version: "0.0.2",
+  summary: "A radically powerful Text-Editor/Wysiwyg editor for Angular.js!",
+  version: "0.0.3",
   git: "https://github.com/netanelgilad/meteor-textAngular.git"
 });
 
@@ -9,6 +9,8 @@ Package.onUse(function(api) {
   api.use('urigo:ngmeteor@0.2.0', 'client');
 
   api.addFiles('textAngular.min.js', 'client');
+  api.addFiles('textAngular-sanitize.min.js', 'client');
+  api.addFiles('textAngular.min.css', 'client');
 
   // Client files.
   api.addFiles('init.js', 'client');
