@@ -7,7 +7,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@0.9.0.1');
   api.use('mquandalle:bower@0.1.11', 'client');
-  api.use('urigo:angular', 'client');
+  api.use('urigo:angular@0.4.5', 'client');
 
   api.addFiles('bower.json', 'client');
 
