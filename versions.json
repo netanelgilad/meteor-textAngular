@@ -1,23 +1,23 @@
 {
   "dependencies": [
     [
-      "jquery",
-      "1.0.0"
+      "meteor",
+      "1.1.2"
     ],
     [
-      "meteor",
-      "1.0.2"
+      "mquandalle:bower",
+      "0.1.11"
     ],
     [
       "underscore",
-      "1.0.0"
+      "1.0.1"
     ],
     [
-      "urigo:ngmeteor",
-      "0.2.0"
+      "urigo:angular",
+      "0.4.5"
     ]
   ],
   "pluginDependencies": [],
-  "toolVersion": "meteor-tool@1.0.26",
+  "toolVersion": "meteor-tool@1.0.34",
   "format": "1.0"
 }
