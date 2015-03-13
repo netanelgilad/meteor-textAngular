@@ -24,7 +24,7 @@ Package.onUse(function(api) {
                 'bower_components/font-awesome/fonts/fontawesome-webfont.woff',
                 'bower_components/font-awesome/fonts/fontawesome-webfont.woff2'], 'client');
 
-  api.use('maxharris9:rangy', 'client');
+  api.use('maxharris9:rangy@0.0.1', 'client');
 
   api.addFiles(['bower_components/textAngular/dist/textAngular-rangy.min.js',
                 'bower_components/textAngular/dist/textAngular-sanitize.min.js',
