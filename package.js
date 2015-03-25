@@ -1,6 +1,6 @@
 Package.describe({
   summary: "A radically powerful Text-Editor/Wysiwyg editor for Angular.js!",
-  version: "0.0.5",
+  version: "0.0.6",
   git: "https://github.com/netanelgilad/meteor-textAngular.git",
   name: "netanelgilad:text-angular"
 });
@@ -28,7 +28,8 @@ Package.onUse(function(api) {
 
   api.addFiles(['bower_components/textAngular/dist/textAngular-rangy.min.js',
                 'bower_components/textAngular/dist/textAngular-sanitize.min.js',
-                'bower_components/textAngular/dist/textAngular.min.js'], 'client');
+                'bower_components/textAngular/dist/textAngular.min.js',
+                'bower_components/textAngular/src/textAngular.css'], 'client');
 
   // Client files.
   api.addFiles('init.js', 'client');
